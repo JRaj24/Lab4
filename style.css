@@ -1,0 +1,195 @@
+/* Reset default styles */
+body,
+h1,
+p,
+button,
+select,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a box-sizing border-box model to everything */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Unique font and color scheme */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-image:url(Sunset.jpg);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #555;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff8c00;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.8rem;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+/* Main Section Styles */
+main {
+    padding: 2.5rem;
+    position: relative;
+}
+
+/* Search Section Styles */
+#search-section {
+    margin-bottom: 2.5rem;
+}
+
+.search-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Button Styles */
+button {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Input and Select Styles */
+select,
+input {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Result Section Styles */
+#result-section {
+    border-top: 2px solid #bbb;
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+/* Result Info Styles */
+.result-info {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+}
+
+.result-info:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Display Styles */
+#errorDisplay {
+    color: #e74c3c;
+    margin-top: 1.5rem;
+}
+
+/* Hide by Default */
+.hidden {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.8rem;
+    padding-top: 5cm;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    #search-section {
+        padding: 1.5rem;
+    }
+
+    .search-options {
+        flex-direction: column;
+    }
+
+    input {
+        margin-top: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    #result-section {
+        padding: 1.5rem;
+    }
+
+    #sunriseSunsetInfo p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+/* Add some styling for icons */
+.result-info i {
+    margin-right: 10px;
+}
+
+/* Enhance the result info styles */
+.result-info {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: box-shadow 0.4s ease;
+}
+
+.result-info:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Style individual data points with icons */
+#sunriseSunsetInfo p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust Font Awesome icon size */
+#sunriseSunsetInfo i {
+    font-size: 20px;
+    margin-right: 12px;
+}
